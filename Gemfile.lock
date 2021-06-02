@@ -26,6 +26,7 @@ PLATFORMS
 DEPENDENCIES
   erb
   hanami-router
+  rack
 
 BUNDLED WITH
    2.1.4

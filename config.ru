@@ -1,4 +1,4 @@
-require 'app'
+require './lib/app.rb'
 
 use Rack::Reloader, 0
 
