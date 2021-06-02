@@ -1,6 +1,6 @@
 require "erb"
 
-class Greet
+class App
     def call(env)
         homePage = render("index.html.erb")
         signUp = render("signup.html.erb")

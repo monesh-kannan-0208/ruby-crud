@@ -1,5 +1,5 @@
-require 'greet'
+require 'app'
 
 use Rack::Reloader, 0
 
-run Greet.new
+run App.new
