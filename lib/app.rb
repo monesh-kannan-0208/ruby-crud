@@ -4,6 +4,7 @@ class App
     def call(env)
         homePage = render("index.html.erb")
         signUp = render("signup.html.erb")
+        landingPage = render("landing.html.erb")
         req = Rack::Request.new(env)
         case req.path_info
         when /login/
@@ -11,7 +12,7 @@ class App
         when /signup/
             [200, {"Content-Type" => "text/html; charset=utf-8"}, ["#{signUp}"]]
         else
-            [404, {"Content-Type" => "text/html"}, ["I'm Lost!"]]
+            [404, {"Content-Type" => "text/html"}, ["#{landingPage}"]]
         end
     end
     def render(template)
